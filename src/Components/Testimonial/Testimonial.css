@@ -1,0 +1,39 @@
+.ui.list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border: 2px solid red; */
+	font-family: 'Poppins', sans-serif;
+}
+
+.comment-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 3% auto;
+}
+
+.comment-container--image {
+	border-radius: 50%;
+	height: 70px;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0% 25%;
+}
+
+.content--name {
+	color: #233eee;
+	font-size: 18px;
+}
+
+.content--title {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	padding: 10px;
+}

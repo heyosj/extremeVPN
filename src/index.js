@@ -1,17 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Navbar from './Components/Navbar/Navbar';
+import Banner from './Components/Banner/Banner';
+import Testimonial from './Components/Testimonial/Testimonial';
+import Card from './Components/Card/Card';
+import Faker from 'faker';
+import Section from './Components/Section/Section';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class App extends React.Component {
+	render() {
+		return (
+			<div>
+				<Navbar />
+				<Banner />
+				<Section sectionTitle="What Peple Are Saying About Us">
+					<Testimonial
+						firstName={Faker.name.firstName()}
+						lastName={Faker.name.lastName()}
+						reviews={Faker.company.catchPhraseDescriptor()}
+						description={Faker.lorem.paragraph()}
+						avatar={Faker.image.avatar()}
+					/>
+					<Testimonial
+						firstName={Faker.name.firstName()}
+						lastName={Faker.name.lastName()}
+						reviews={Faker.company.catchPhraseDescriptor()}
+						description={Faker.lorem.paragraph()}
+						avatar={Faker.image.avatar()}
+					/>
+				</Section>
+			</div>
+		);
+	}
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App />, document.querySelector('#root'));
