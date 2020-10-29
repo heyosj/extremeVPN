@@ -17,7 +17,7 @@ This project was to practice on some of the fundemental concepts I've been learn
 
 ### State
 
--   Here I utized State by updating the longitude and latitude of the user for the Location component at the bottom.
+-   Here I utilized State by updating the longitude and latitude of the user for the Location component at the bottom.
 
 ### Props
 
