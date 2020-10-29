@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* body > div {
-	background: #9ca6d9;
-	clip-path: inset(0 0 0 0 round 0 0 25% 25%);
-	border-top: solid 3px #8b72be;
-} */
+html {
+	scroll-behavior: smooth;
+}
+
+.navbar--container {
+	background: #f1f6f9;
+}
 
 .navbar {
 	display: flex;
@@ -14,7 +16,6 @@
 	font-family: 'Poppins', sans-serif;
 	margin: auto 5%;
 	padding-top: 1%;
-	background: #fffeee;
 }
 
 .navbar > .navbar--logo {
@@ -29,4 +30,14 @@
 	color: #3f3f3f;
 	cursor: pointer;
 	font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar > .navbar--logo {
+		font-size: 24px;
+	}
+
+	.navbar--items > .item {
+		font-size: 14px;
+	}
 }

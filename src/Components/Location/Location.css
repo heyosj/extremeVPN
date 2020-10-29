@@ -1,0 +1,17 @@
+.mapContainer {
+	padding-top: 75px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.google-map {
+	height: 40vh;
+}
+
+.title {
+	font-size: 36px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	padding-top: 100px;
+}
